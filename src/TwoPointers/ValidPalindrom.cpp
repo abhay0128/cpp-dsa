@@ -15,7 +15,7 @@ int main() {
         while(left < right && !isalnum(s[right])) {
             right--;
         }
-        if (s[left] != s[right]) {
+        if (tolower(s[left]) != tolower(s[right])) {
             isPalindrome = false;
             break;
         }
